@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn
+
+PATH: 
+  /home/bender/.opam/4.06.0/bin:/home/bender/anaconda3/bin/:/home/bender/path/name:/opt/gradle/gradle-3.4.1/bin/:/home/bender/anaconda/bin:/home/bender/anaconda/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  0.24.5
+
+Node version: 
+  8.9.4
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "two",
+    "version": "0.1.0",
+    "scripts": {
+      "build": "bsb -make-world",
+      "start": "bsb -make-world -w",
+      "clean": "bsb -clean-world",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "webpack": "webpack -w",
+      "webpack:production": "NODE_ENV=production webpack"
+    },
+    "keywords": [
+      "BuckleScript"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "reason-react": ">=0.4.0"
+    },
+    "devDependencies": {
+      "bs-platform": "^3.1.4",
+      "webpack": "^4.0.1",
+      "webpack-cli": "^2.0.10"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, chmod '/home/bender/code/reason/1/two/node_modules/.bin/bsb'
